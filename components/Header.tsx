@@ -1,3 +1,5 @@
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -38,18 +40,17 @@ function Header() {
             </li>
             <li>
               <Link
-                className=" flex cursor-pointer rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80"
+                className=" flex cursor-pointer flex-nowrap items-center gap-2 rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80"
                 href="#"
               >
-                Log In
+                <FontAwesomeIcon icon={faUser} className="h-4 w-4" /> Log In
               </Link>
             </li>
           </ul>
         </div>
-        <button className="z-50 p-[10px] sm:hidden">
-          <div className="my-1 h-1 w-8 rounded bg-[#333]"></div>
-          <div className="my-1 h-1 w-8 rounded bg-[#333]"></div>
-          <div className="my-1 h-1 w-8 rounded bg-[#333]"></div>
+        <button className="z-50 flex h-12 w-12 flex-col flex-nowrap items-center justify-center gap-1 rounded-xl bg-light p-[10px] sm:hidden">
+          <div className=" h-1 w-6 rounded bg-[#333]"></div>
+          <div className=" h-1 w-6 rounded bg-[#333]"></div>
         </button>
         <div className="fixed right-[-300px] top-0 z-30 h-full w-64 shadow transition-all duration-300 ease-in-out">
           <ul className="flex">
@@ -63,9 +64,12 @@ function Header() {
               <Link href="#">Blog</Link>
             </li>
             <li>
-              <a className="btn" href="#">
-                Log In
-              </a>
+              <Link
+                className=" flex cursor-pointer flex-nowrap items-center gap-2 rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80"
+                href="#"
+              >
+                <FontAwesomeIcon icon={faUser} className="h-4 w-4" /> Log In
+              </Link>
             </li>
           </ul>
         </div>

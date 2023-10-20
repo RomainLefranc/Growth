@@ -19,6 +19,16 @@ const config: Config = {
       gridTemplateColumns: {
         footer: "3fr 1fr 1fr 1fr",
       },
+      backgroundImage: {
+        hero: "url('/hero-bg.png')",
+        "hero-mobile": "url('/hero-bg-mobile.png')",
+      },
+      backgroundPosition: {
+        "center-bottom": "center bottom",
+      },
+      backgroundSize: {
+        "size-hero-mobile": "350px 400px",
+      },
     },
   },
   plugins: [],
