@@ -3,16 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import logo from "@/public/logo.png";
 
 function Header() {
   return (
     <nav>
       <div className="mx-auto flex max-w-[1100px] items-center justify-between px-4 py-5">
-        <Link href="/" className="relative block h-16 w-28">
-          <Image src="/logo.png" alt="logo" fill objectFit="contain" />
+        <Link href="/">
+          <Image src={logo} alt="logo" />
         </Link>
 
-        <div className="hidden sm:block">
+        <div className="hidden md:block">
           <ul className="flex">
             <li>
               <Link
@@ -25,7 +26,7 @@ function Header() {
             <li>
               <Link
                 href="#"
-                className="block px-5 py-[10px]  text-[#333] duration-500 hover:text-primary"
+                className="block px-5 py-[10px] text-[#333] duration-500 hover:text-primary"
               >
                 About Us
               </Link>
@@ -40,7 +41,7 @@ function Header() {
             </li>
             <li>
               <Link
-                className=" flex cursor-pointer flex-nowrap items-center gap-2 rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80"
+                className="flex cursor-pointer flex-nowrap items-center gap-2 rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80"
                 href="#"
               >
                 <FontAwesomeIcon icon={faUser} className="h-4 w-4" /> Log In
@@ -48,7 +49,7 @@ function Header() {
             </li>
           </ul>
         </div>
-        <button className="z-50 flex h-12 w-12 flex-col flex-nowrap items-center justify-center gap-1 rounded-xl bg-light p-[10px] sm:hidden">
+        <button className="z-50 flex h-12 w-12 flex-col flex-nowrap items-center justify-center gap-1 rounded-xl bg-light p-[10px] md:hidden">
           <div className=" h-1 w-6 rounded bg-[#333]"></div>
           <div className=" h-1 w-6 rounded bg-[#333]"></div>
         </button>
@@ -65,7 +66,7 @@ function Header() {
             </li>
             <li>
               <Link
-                className=" flex cursor-pointer flex-nowrap items-center gap-2 rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80"
+                className="flex cursor-pointer flex-nowrap items-center gap-2 rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80"
                 href="#"
               >
                 <FontAwesomeIcon icon={faUser} className="h-4 w-4" /> Log In

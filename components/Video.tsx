@@ -1,27 +1,22 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import videoPreview from "@/public/video-preview.png";
 function Video() {
   return (
-    <section className=" bg-black pb-10 pt-3 text-white">
+    <section className=" bg-black py-24 text-white">
       <div className="mx-auto max-w-[800px] px-4">
-        <h2 className="mb-5 mt-10 text-center text-3xl leading-[1.4] sm:text-4xl">
+        <h2 className="mb-5 mt-10 text-center text-3xl font-medium leading-[1.4] sm:text-5xl">
           See how it works and get started in less than 2 minutes
         </h2>
-        <div className=" flex flex-col items-center">
-          <Link href="/" className="relative mb-5 block aspect-video  w-full">
-            <Image
-              src="/video-preview.png"
-              alt="logo"
-              fill
-              objectFit="contain"
-            />
+        <div className=" mt-11 flex flex-col items-center">
+          <Link href="/">
+            <Image src={videoPreview} alt="video preview" />
           </Link>
 
           <Link
             href="#"
-            className="rounded-xl bg-primary px-5 py-3 text-center font-semibold text-white duration-500 hover:opacity-80 "
+            className="mt-16 rounded-xl bg-primary px-5 py-3 text-center font-semibold text-white duration-500 hover:opacity-80"
           >
             Get Started
           </Link>
