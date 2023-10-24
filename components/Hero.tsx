@@ -1,9 +1,8 @@
-import { faLaptop } from "@fortawesome/free-solid-svg-icons/faLaptop";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 import heroMobile from "@/public/hero-bg-mobile.png";
 import Image from "next/image";
+import { Laptop } from "lucide-react";
 
 function Hero() {
   return (
@@ -28,8 +27,7 @@ function Hero() {
               href="#"
               className="flex flex-nowrap items-center justify-center gap-2 rounded-xl bg-light px-5 py-3 text-center font-semibold text-[#333] duration-500 hover:opacity-80"
             >
-              <FontAwesomeIcon icon={faLaptop} className="h-4 w-4" /> Book a
-              Demo
+              <Laptop className="h-4 w-4" /> Book a Demo
             </Link>
           </div>
           <div className="flex justify-center md:hidden">

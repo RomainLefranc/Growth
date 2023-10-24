@@ -1,14 +1,42 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faLinkedin,
-  faYoutube,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
 import logoWhite from "@/public/logo-white.png";
+import { Facebook, Linkedin, Twitter, Youtube } from "lucide-react";
+
+const COMPANY_LINKS: { text: string; href: string }[] = [
+  {
+    text: "About Us",
+    href: "/",
+  },
+
+  {
+    text: "Our Process",
+    href: "/",
+  },
+
+  {
+    text: "Join Our Team",
+    href: "/",
+  },
+];
+
+const RESOURCE_LINKS: { text: string; href: string }[] = [
+  {
+    text: "News",
+    href: "/",
+  },
+
+  {
+    text: "Research",
+    href: "/",
+  },
+
+  {
+    text: "Recent Projects",
+    href: "/",
+  },
+];
 
 function Footer() {
   return (
@@ -42,70 +70,39 @@ function Footer() {
           <div>
             <h4 className="mb-3 font-semibold">Company</h4>
             <ul>
-              <li className="leading-loose">
-                <Link href="#" className="text-[#ccc]">
-                  About Us
-                </Link>
-              </li>
-              <li className="leading-loose">
-                <Link href="#" className="text-[#ccc]">
-                  Our Process
-                </Link>
-              </li>
-              <li className="leading-loose">
-                <Link href="#" className="text-[#ccc]">
-                  Join Our Team
-                </Link>
-              </li>
+              {COMPANY_LINKS.map(({ href, text }, i) => (
+                <li className="leading-loose" key={i}>
+                  <Link href={href} className="text-[#ccc]">
+                    {text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
             <h4 className="mb-3 font-semibold">Resources</h4>
             <ul>
-              <li className="leading-loose">
-                <Link href="#" className="text-[#ccc]">
-                  News
-                </Link>
-              </li>
-              <li className="leading-loose">
-                <Link href="#" className="text-[#ccc]">
-                  Research
-                </Link>
-              </li>
-              <li className="leading-loose">
-                <Link href="#" className="text-[#ccc]">
-                  Recent Projects
-                </Link>
-              </li>
+              {RESOURCE_LINKS.map(({ href, text }, i) => (
+                <li className="leading-loose" key={i}>
+                  <Link href={href} className="text-[#ccc]">
+                    {text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
             <h4 className="mb-3 font-semibold">Contact</h4>
             <ul>
-              <li className="leading-loose">
-                <Link href="#" className="text-[#ccc]">
-                  hello@growthapp.com
-                </Link>
-              </li>
+              <li className="leading-loose">hello@growthapp.com</li>
             </ul>
           </div>
         </div>
         <div className="mb-4 flex gap-3 sm:mb-16">
-          <Link href="/">
-            <FontAwesomeIcon icon={faLinkedin} className="h-8 w-8 text-white" />
-          </Link>
-
-          <Link href="/">
-            <FontAwesomeIcon icon={faTwitter} className="h-8 w-8 text-white" />
-          </Link>
-
-          <Link href="/">
-            <FontAwesomeIcon icon={faFacebook} className="h-8 w-8 text-white" />
-          </Link>
-
-          <Link href="/">
-            <FontAwesomeIcon icon={faYoutube} className="h-8 w-8 text-white" />
-          </Link>
+          <Linkedin className="h-8 w-8 text-white" href="/" />
+          <Twitter className="h-8 w-8 text-white" href="/" />
+          <Facebook className="h-8 w-8 text-white" href="/" />
+          <Youtube className="h-8 w-8 text-white" href="/" />
         </div>
 
         <p className="text-[#ccc]">© 2023 Growth. All rights reserved</p>

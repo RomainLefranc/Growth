@@ -1,5 +1,4 @@
-import { faArrowDown, faCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Check, MoveDown } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -30,31 +29,19 @@ function Pricing() {
             <div>
               <ul className="flex flex-col gap-3">
                 <li className="flex gap-3">
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className="h-6 w-6 flex-shrink-0"
-                  />
+                  <Check className="h-6 w-6 flex-shrink-0" />
                   Real-Time Monitoring
                 </li>
                 <li className="flex gap-3">
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className="h-6 w-6 flex-shrink-0"
-                  />
+                  <Check className="h-6 w-6 flex-shrink-0" />
                   Track key performance indicators
                 </li>
                 <li className="flex gap-3">
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className="h-6 w-6 flex-shrink-0"
-                  />
+                  <Check className="h-6 w-6 flex-shrink-0" />
                   Schedule appointments
                 </li>
                 <li className="flex gap-3">
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className="h-6 w-6 flex-shrink-0"
-                  />
+                  <Check className="h-6 w-6 flex-shrink-0" />
                   Organize, delegate and keep track of tasks
                 </li>
               </ul>
@@ -82,39 +69,24 @@ function Pricing() {
               <p className="mb-3">Everything from the free plan plus:</p>
               <ul className="flex flex-col gap-3">
                 <li className="flex gap-3">
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className="h-6 w-6 flex-shrink-0"
-                  />
+                  <Check className="h-6 w-6 flex-shrink-0" />
                   Data-driven decisions
                 </li>
                 <li className="flex gap-3">
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className="h-6 w-6 flex-shrink-0"
-                  />
+                  <Check className="h-6 w-6 flex-shrink-0" />
                   Data visualization
                 </li>
                 <li className="flex gap-3">
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className="h-6 w-6 flex-shrink-0"
-                  />
+                  <Check className="h-6 w-6 flex-shrink-0" />
                   Schedule appointments
                 </li>
                 <li className="flex gap-3">
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className="h-6 w-6 flex-shrink-0"
-                  />
+                  <Check className="h-6 w-6 flex-shrink-0" />
                   Store and organise contact information
                 </li>
 
                 <li className="flex gap-3">
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className="h-6 w-6 flex-shrink-0"
-                  />
+                  <Check className="h-6 w-6 flex-shrink-0" />
                   Teal-time communication tools for messaging and video
                   conferencing
                 </li>
@@ -135,10 +107,7 @@ function Pricing() {
           </p>
           <Link href="/" className="flex items-center gap-2 font-semibold">
             View features
-            <FontAwesomeIcon
-              icon={faArrowDown}
-              className="h-4 w-4 flex-shrink-0"
-            />
+            <MoveDown className="h-4 w-4 flex-shrink-0" />
           </Link>
         </div>
       </div>
