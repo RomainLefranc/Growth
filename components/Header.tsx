@@ -3,13 +3,7 @@ import Link from "next/link";
 import React from "react";
 import logo from "@/public/logo.png";
 import { Menu, User2 } from "lucide-react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTrigger,
-} from "@/components/ui/Sheet";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTrigger } from "@/components/ui/Sheet";
 
 function Header() {
   return (
@@ -22,34 +16,22 @@ function Header() {
         <div className="hidden md:block">
           <ul className="flex items-center gap-3">
             <li>
-              <Link
-                href="/"
-                className="block px-4 text-[#333] duration-500 hover:text-primary"
-              >
+              <Link href="/" className="block px-4 text-[#333] duration-500 hover:text-primary">
                 Features
               </Link>
             </li>
             <li>
-              <Link
-                href="#"
-                className="block px-4 text-[#333] duration-500 hover:text-primary"
-              >
+              <Link href="#" className="block px-4 text-[#333] duration-500 hover:text-primary">
                 About Us
               </Link>
             </li>
             <li>
-              <Link
-                href="#"
-                className="block px-4 text-[#333] duration-500 hover:text-primary"
-              >
+              <Link href="#" className="block px-4 text-[#333] duration-500 hover:text-primary">
                 Blog
               </Link>
             </li>
             <li>
-              <Link
-                className="flex cursor-pointer flex-nowrap items-center gap-2 rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80"
-                href="#"
-              >
+              <Link className="flex cursor-pointer flex-nowrap items-center gap-2 rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80" href="#">
                 <User2 className="h-4 w-4" /> Log In
               </Link>
             </li>
@@ -64,34 +46,22 @@ function Header() {
               <SheetDescription>
                 <ul className="flex flex-col items-start gap-3">
                   <li>
-                    <Link
-                      href="/"
-                      className="block text-[#333] duration-500 hover:text-primary"
-                    >
+                    <Link href="/" className="block text-[#333] duration-500 hover:text-primary">
                       Features
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      href="#"
-                      className="block text-[#333] duration-500 hover:text-primary"
-                    >
+                    <Link href="#" className="block text-[#333] duration-500 hover:text-primary">
                       About Us
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      href="#"
-                      className="block text-[#333] duration-500 hover:text-primary"
-                    >
+                    <Link href="#" className="block text-[#333] duration-500 hover:text-primary">
                       Blog
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      className="flex cursor-pointer flex-nowrap items-center gap-2 rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80"
-                      href="#"
-                    >
+                    <Link className="flex cursor-pointer flex-nowrap items-center gap-2 rounded-xl border-none bg-light px-5 py-3 text-center text-[#333] duration-500 hover:opacity-80" href="#">
                       <User2 className="h-4 w-4" /> Log In
                     </Link>
                   </li>

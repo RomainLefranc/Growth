@@ -30,8 +30,7 @@ function Testimonials() {
     <section className="bg-dark py-24 text-white">
       <div className="mx-auto max-w-[1100px] px-4">
         <h3 className=" mb-16 max-w-full text-center text-3xl leading-[1.4] sm:text-left sm:text-5xl md:w-[700px]">
-          Don&apos;t just take our word for it, see the success stories from
-          businesses just like yours.
+          Don&apos;t just take our word for it, see the success stories from businesses just like yours.
         </h3>
         <div className="flex flex-col items-start gap-8 text-black md:flex-row">
           {TESTIMONIALS.map((testimonial, i) => (

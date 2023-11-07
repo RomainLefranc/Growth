@@ -48,21 +48,10 @@ function Footer() {
         <div className="mb-10 grid grid-cols-2 justify-center gap-10 sm:grid-cols-footer">
           <div className=" col-span-2 rounded-xl bg-white p-5 text-black sm:col-span-1 sm:max-w-sm">
             <h4 className="mb-3">Subscribe to Newsletter</h4>
-            <p className="mb-5 text-sm">
-              Subscribe now to receive tips on how to take your business to the
-              next level.
-            </p>
+            <p className="mb-5 text-sm">Subscribe now to receive tips on how to take your business to the next level.</p>
             <form className=" flex gap-2 sm:block md:flex">
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-                className="w-full rounded-md border border-solid border-[#ccc] p-3 sm:mb-2 md:mb-0 "
-              />
-              <button
-                type="submit"
-                className=" cursor-pointer rounded-xl border-none bg-primary px-5 py-3 text-center font-semibold text-white duration-500 hover:opacity-80 sm:w-full md:w-auto  "
-              >
+              <input type="email" id="email" placeholder="Enter your email" className="w-full rounded-md border border-solid border-[#ccc] p-3 sm:mb-2 md:mb-0 " />
+              <button type="submit" className=" cursor-pointer rounded-xl border-none bg-primary px-5 py-3 text-center font-semibold text-white duration-500 hover:opacity-80 sm:w-full md:w-auto  ">
                 Subscribe
               </button>
             </form>
