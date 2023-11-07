@@ -108,12 +108,12 @@ function Faq() {
                       key={question.id}
                       initial={{
                         opacity: 0,
-                        y: "50%",
+                        x: "50%",
                       }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{
                         opacity: 0,
-                        y: "50%",
+                        x: "50%",
                       }}
                       transition={{
                         delay: i * 0.1,
